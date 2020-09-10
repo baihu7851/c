@@ -20,7 +20,7 @@ namespace c練習
         #region 6-2 數字確認
         static string NumberCheck(string input)
         {
-            if (Regex.IsMatch(input, @"[\d]?[.]?[\d]"))
+            if (Regex.IsMatch(input, @"^[-]?[\d][.]?[\d]?"))
             {
                 return input;
             }
@@ -119,7 +119,6 @@ namespace c練習
             }
         }
         #endregion
-
         #region 10-7 西元轉民國(年月日間需有分別 ex:"/",".","-")
         static string TaiwanTimeChange(string input)
         {
